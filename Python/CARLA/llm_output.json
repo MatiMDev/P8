@@ -1,0 +1,24 @@
+{
+  "message": "Proceed forward along the lane and park at the first available safe spot on the right side of the road.",
+  "waypoints": [
+    [
+      10.0,
+      0.0
+    ],
+    [
+      20.0,
+      0.0
+    ],
+    [
+      25.0,
+      -3.0
+    ]
+  ],
+  "actions": [
+    "follow_lane",
+    "move_forward",
+    "change_lane",
+    "park",
+    "stop"
+  ]
+}

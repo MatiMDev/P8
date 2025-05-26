@@ -1,0 +1,190 @@
+.container {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  padding: 1.5rem;
+  height: 100%;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.debugButton {
+  padding: 0.3rem 0.6rem;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.debugButton:hover {
+  background-color: #e0e0e0;
+}
+
+.section {
+  margin-bottom: 1.5rem;
+}
+
+.sectionTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0 0 0.75rem 0;
+  color: #555;
+}
+
+.dataRow {
+  display: flex;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.dataLabel {
+  flex: 0 0 100px;
+  font-weight: 500;
+  color: #666;
+}
+
+.dataValue {
+  flex: 1;
+  font-family: "Courier New", monospace;
+  word-break: break-all;
+}
+
+.loadingState,
+.errorState {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+  color: #666;
+  padding: 2rem;
+}
+
+.spinner {
+  width: 30px;
+  height: 30px;
+  border: 3px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  border-top-color: #333;
+  animation: spin 1s ease-in-out infinite;
+  margin-bottom: 1rem;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.dataContent {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.errorTitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #e53e3e;
+  margin-bottom: 0.5rem;
+}
+
+.errorMessage {
+  margin-bottom: 1.5rem;
+  color: #555;
+}
+
+.troubleshooting {
+  text-align: left;
+  background-color: #f8f8f8;
+  border-radius: 6px;
+  padding: 1rem;
+  width: 100%;
+}
+
+.troubleshootingTitle {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.troubleshootingList {
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.troubleshootingList li {
+  margin-bottom: 0.5rem;
+}
+
+.codeSnippet {
+  background-color: #f0f0f0;
+  border-radius: 4px;
+  padding: 1rem;
+  margin-top: 1rem;
+  font-size: 0.85rem;
+}
+
+.codeSnippet pre {
+  background-color: #333;
+  color: #fff;
+  padding: 0.75rem;
+  border-radius: 4px;
+  overflow-x: auto;
+  margin: 0.5rem 0;
+}
+
+.codeSnippet code {
+  background-color: #333;
+  color: #fff;
+  padding: 0.2rem 0.4rem;
+  border-radius: 3px;
+}
+
+.debugSection {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px dashed #ddd;
+}
+
+.debugTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #666;
+}
+
+.debugContent {
+  background-color: #f8f8f8;
+  border-radius: 6px;
+  padding: 1rem;
+}
+
+.rawResponse {
+  background-color: #333;
+  color: #fff;
+  padding: 0.75rem;
+  border-radius: 4px;
+  overflow-x: auto;
+  font-size: 0.85rem;
+  max-height: 200px;
+  overflow-y: auto;
+}

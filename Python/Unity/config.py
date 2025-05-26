@@ -1,0 +1,7 @@
+# config.py
+
+SHOW_WINDOWS = True
+DISABLE_FLASK_LOGGING = True
+DISABLE_ULTRALYTICS_LOGGING = True
+
+MODEL_TYPE = "MiDaS_small"
